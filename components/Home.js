@@ -27,6 +27,7 @@ function Home() {
             <Image src='/icon/linkedIn.png' width={30} height={30} alt='icon' style={{ cursor: 'pointer' }} onClick={() => window.open('https://www.linkedin.com/in/maxime-leblanc-dev/', '_blank')} />
           </div>
           <p>« Aujourd’hui développeur Web & Mobile, j’ai acquis de solides compétences professionnelles pour avoir travaillé plus de dix années dans divers secteurs d’entreprises. Curieux et soucieux d’associer mon métier à l’enrichissement de mes connaissances et de participer à l’intelligence collective d’un projet, j’ai à coeur de m’investir pour la Tech. »</p>
+         <Link href='mailto:maxime.leb@gmail.com' >cacamou</Link>
         </div>
       </div>
       <div className={styles.mainRight}>

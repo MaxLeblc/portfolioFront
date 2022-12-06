@@ -30,8 +30,10 @@
 
 .container {
     display: flex;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
     flex-wrap: wrap;
-    flex-direction: row;
     /* gap: 2rem; */
 
     width: 60rem;
@@ -43,6 +45,8 @@
     /* padding: 2rem; */
     /* border: aqua solid; */
 }
+
+
 
 .card {
     display: flex;
@@ -57,7 +61,13 @@
     border-radius: 0.5rem;
 
     /* margin: 2rem 8rem 2rem 0rem; */
-    margin: 0 2rem 2rem 2rem;
+    margin: 1rem 1rem 1rem 1rem;
+    /* border: blue solid; */
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .description {
