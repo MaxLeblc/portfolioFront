@@ -1,4 +1,4 @@
-.container {
+.view {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 60% 30%;
@@ -31,9 +31,8 @@
   color: #fff;
 }
 
-.header>a:-webkit-any-link {
+.header > a:-webkit-any-link {
   color: #FB4A5F;
-  cursor: pointer;
   text-decoration: none;
   margin-left: 2rem;
 }
@@ -42,7 +41,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* border: blue solid; */
 }
 
 .description {
@@ -72,6 +70,12 @@
   animation: fadeInUp 1s ease-out 600ms backwards;
 }
 
+.description > :nth-child(3) {
+  display: flex;
+  align-items: center;
+  /* font-size: 30px; */
+}
+
 .description> :nth-child(n+3) {
   /* width: 500px; */
   /* margin-bottom: 1rem; */
@@ -86,6 +90,8 @@
   font-style: italic;
   font-size: 20px;
   font-weight: 500;
+  height: 12rem;
+  /* margin-bottom: 1rem; */
 }
 
 @keyframes fadeInUp {
@@ -115,7 +121,6 @@
   from {
     opacity: 0
   }
-
   to {
     opacity: 1
   }
@@ -137,11 +142,9 @@
   0% {
     box-shadow: 0 0 0 0 #fb4a5fc7;
   }
-
   70% {
     box-shadow: 0 0 0 15px #fb4a5f00;
   }
-
   100% {
     box-shadow: 0 0 0 0 #fb4a5f00;
   }
@@ -158,6 +161,10 @@
   border-width: 2px 2px 0 2px;
   margin-right: 6rem;
   cursor: pointer;
+}
+
+.cursor > div > p{
+  margin-right: 8rem;
 }
 
 .cursor:hover {

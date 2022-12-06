@@ -1,9 +1,8 @@
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Contact.module.css'
 
 function Contact() {
   return (
-    <div className={styles.container}>
-      <div className={styles.circle} />
+    <div className={styles.view}>
 
     </div>
   )

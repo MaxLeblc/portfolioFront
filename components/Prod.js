@@ -4,7 +4,7 @@ import Link from 'next/link'
 function Prod() {
   return (
     <div className={styles.view}>
-      
+
       <div className={styles.container1} >
         <div className={styles.description}>
           <p>Reservez un train avec OuiOui</p>
