@@ -94,6 +94,19 @@
   /* margin-bottom: 1rem; */
 }
 
+.icon1, .icon2 {
+  display: flex;
+  align-items: center;
+  scale: 1.15;
+  color: #000;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.icon2 {
+ scale: 1.05;
+}
+
 @keyframes fadeInUp {
   from {
     transform: translateY(2rem);
@@ -135,7 +148,7 @@
 
 .footer> :nth-child(3) {
   box-shadow: 0 0 0 0 #fb4a5f;
-  animation: pulse 2s 10;
+  animation: pulse 2s 20;
 }
 
 @keyframes pulse {
