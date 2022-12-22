@@ -1,31 +1,13 @@
-.view {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    font-size: 28px;
-    width: 100%;
-    height: 100vh;
-    /* border: blue solid; */
-}
+@keyframes fadeInUp {
+    from {
+        transform: translateY(2rem);
+        opacity: 0
+    }
 
-.contactMail {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-    animation: fadeIn 800ms ease-in-out 100ms backwards;
-}
-
-.contactSocial {
-    display: flex;
-    align-items: center;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-    animation: fadeIn 800ms ease-in-out 600ms backwards;
+    to {
+        transform: translateY(0);
+        opacity: 1
+    }
 }
 
 @keyframes fadeIn {
@@ -40,9 +22,68 @@
     }
 }
 
-.icon {
-    width: 30px;
-    height: 30px;
+.view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: #fff;
-    margin-left: 1rem;
+    font-size: 20px;
+    line-height: 2rem;
+    text-align: justify;
+    width: 100%;
+    height: 100vh;
+    margin: 0 12rem 12rem 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>p {
+    width: 60%;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-out 800ms backwards;
+}
+
+.image {
+    width: 20rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-out 200ms backwards;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 4rem;
+}
+
+.contactMail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    animation: fadeIn 800ms ease-in-out 1400ms backwards;
+}
+
+.contactSocial {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    animation: fadeIn 800ms ease-in-out 1800ms backwards;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    margin-right: 1rem;
 }

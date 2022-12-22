@@ -16,11 +16,13 @@ function Skills() {
     { name: 'MongoDB', image: '/stack/mongoDB.png', link: 'https://www.mongodb.com/docs/manual/tutorial/getting-started/' },
     { name: 'GitHub', image: '/stack/gitHub.png', link: 'https://docs.github.com/fr/get-started' },
     { name: 'Yarn', image: '/stack/yarn.png', link: 'https://yarnpkg.com/getting-started/install' },
+    { name: 'Sass', image: '/stack/sass.png', link: 'https://sass-lang.com/documentation/'},
     { name: 'Méthode Agile', image: '/stack/agile.png', link: 'https://www.atlassian.com/fr/agile' },
     { name: 'Figma', image: '/stack/figma.png', link: 'https://help.figma.com/hc/en-us/categories/360002042553-Figma-design#Get-started' },
     { name: 'Photoshop', image: '/stack/photoshop.png', link: 'https://helpx.adobe.com/photoshop/get-started.html' },
     { name: 'Illustrator', image: '/stack/illustrator.png', link: 'https://helpx.adobe.com/illustrator/get-started.html' },
     { name: 'InDesign', image: '/stack/inDesign.png', link: 'https://helpx.adobe.com/indesign/get-started.html' },
+    { name: 'Premiere Pro', image: '/stack/premiere.png', link: 'https://helpx.adobe.com/premiere-pro/get-started.html' },
   ]
 
   const fullStack = stack.map((data, i) => {

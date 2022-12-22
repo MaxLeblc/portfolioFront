@@ -1,4 +1,4 @@
-import styles from '../styles/Bubble.module.css'
+import styles from '../styles/Bubble.module.scss'
 
 function Ripple() {
     return (

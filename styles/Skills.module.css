@@ -1,23 +1,3 @@
-.view {
-    gap: 1rem;
-    display: flex;
-    display: block;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    justify-content: center;
-    align-items: flex-start;
-
-    width: 100%;
-    /* height: 55vh; */
-    /* height: 100vh; */
-    /* height: 100vh; */
-    /* padding: 2rem; */
-    /* font-size: 20px; */
-    /* border: blue solid; */
-
-    animation: fadeIn 1500ms ease backwards;
-}
-
 @keyframes fadeIn {
     from {
         opacity: 0
@@ -28,30 +8,25 @@
     }
 }
 
-.container {
+.view {
+    gap: 1rem;
     display: flex;
-    /* flex-direction: row; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    flex-wrap: wrap;
-    /* gap: 2rem; */
-
-    width: 60rem;
-    /* height: 70rem; */
-    /* height: 50rem; */
-
-    /* margin-bottom: 2rem; */
-    /* margin-left: 1rem; */
-    /* padding: 2rem; */
-    /* border: aqua solid; */
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    animation: fadeIn 1500ms ease backwards;
 }
 
-
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60rem;
+}
 
 .card {
     display: flex;
-    /* flex-wrap: wrap; */
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     width: 10rem;
@@ -59,10 +34,7 @@
     background-color: #ffc9cf;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
     border-radius: 0.5rem;
-
-    /* margin: 2rem 8rem 2rem 0rem; */
     margin: 1rem 1rem 1rem 1rem;
-    /* border: blue solid; */
     cursor: pointer;
 }
 
@@ -74,7 +46,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* color: #fff; */
     color: #000;
     font-weight: 600;
 }
