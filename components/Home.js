@@ -10,7 +10,9 @@ import { useEffect, useState } from 'react'
 
 function Home() {
   const [componentChoice, setComponentChoice] = useState('home')
+  console.log("🚀 ~ file: Home.js:13 ~ Home ~ componentChoice", componentChoice)
   const [isMobile, setIsMobile] = useState(false)
+  console.log("🚀 ~ file: Home.js:15 ~ Home ~ isMobile", isMobile)
 
   useEffect(() => {
     window.innerWidth < 768 ? setIsMobile(true) : setIsMobile(false)
@@ -19,6 +21,12 @@ function Home() {
       window.innerWidth < 768 ? setIsMobile(true) : setIsMobile(false)
     })
   }, [])
+
+  useEffect(() => {
+      if (componentChoice != 'home' && window.innerWidth < 1720) {
+        document.getElementById("mainLeft").style.display = "none"
+      }
+  }, [componentChoice])
 
   const navBar = () => {
     if (!isMobile) {
@@ -33,11 +41,12 @@ function Home() {
     }
   }
 
+
   return (
     <div className={styles.view}>
       <div className={styles.circle} />
       {navBar()}
-      <div className={styles.mainLeft}>
+      <div className={styles.mainLeft} id='mainLeft'>
         <div className={styles.description}>
           <h2>Maxime</h2>
           <h2>Leblanc</h2>

@@ -58,3 +58,12 @@
     width: 8rem;
     padding: 1rem 1rem 0 1rem;
 }
+
+@media all and (max-height: 1024px) {
+   .card {
+    margin: 0 0.5rem 0 0;
+    scale: .80;
+   }
+    
+}
+

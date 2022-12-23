@@ -465,19 +465,36 @@
 		top: 22rem;
 		margin-right: 2rem;
 	}
-
+	
 	.icon2 {
 		left: 3.5rem;
 	}
-
+	
 	.footer {
 		justify-content: center;
 		margin-left: 0;
 		left: 50%;
 		transform: translateX(-50%);
+		padding: 0 2rem;
 	}
 
 	.mainRight {
 		left: 0%;
+	}
+}
+
+@media all and (max-height: 1024px) {
+
+	.mainLeft {
+		margin-top: 5rem;
+	}
+
+	.cursor:hover {
+		height: 18rem;
+
+		&> :nth-child(n+2) {
+			font-size: 55px;
+			margin-top: 5rem;
+		}
 	}
 }
