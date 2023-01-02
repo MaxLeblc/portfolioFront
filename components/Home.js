@@ -10,9 +10,7 @@ import { useEffect, useState } from 'react'
 
 function Home() {
   const [componentChoice, setComponentChoice] = useState('home')
-  console.log("🚀 ~ file: Home.js:13 ~ Home ~ componentChoice", componentChoice)
   const [isMobile, setIsMobile] = useState(false)
-  console.log("🚀 ~ file: Home.js:15 ~ Home ~ isMobile", isMobile)
 
   useEffect(() => {
     window.innerWidth < 768 ? setIsMobile(true) : setIsMobile(false)

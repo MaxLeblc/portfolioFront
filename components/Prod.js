@@ -1,4 +1,4 @@
-import styles from '../styles/Prod.module.css'
+import styles from '../styles/Prod.module.scss'
 import Link from 'next/link'
 
 function Prod() {

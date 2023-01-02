@@ -1,0 +1,142 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60rem;
+    animation: fadeIn 1500ms ease backwards;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    background-color: #ffc9cf;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    margin: 1rem 1rem 1rem 1rem;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.description {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+
+    &>p {
+        margin: 0.5rem 0;
+    }
+}
+
+.image {
+    width: 8rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+@media all and (max-height: 1024px) {
+    .card {
+        margin: 0 0.5rem 0 0;
+        scale: .80;
+    }
+
+}
+
+@media all and (min-width: 1024px) and (max-width: 1720px) {
+
+    .container {
+        justify-content: center;
+        position: absolute;
+        margin-left: auto;
+        top: 1rem;
+        left: 6rem;
+        width: 60rem;
+    }
+
+    .card {
+        background: #fff;
+        box-shadow: 0 0.5rem 1rem #681e2789;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        justify-content: center;
+        position: absolute;
+        margin-left: auto;
+        top: 1rem;
+        right: auto;
+        width: 60rem;
+        scale: 0.85;
+    }
+
+    .card {
+        background: #fff;
+        box-shadow: 0 0.5rem 1rem #681e2789;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .container {
+        justify-content: center;
+        position: absolute;
+        margin-left: auto;
+        top: -3rem;
+        right: auto;
+        width: 40rem;
+        height: 40rem;
+        scale: 0.85;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .card {
+        background: #fff;
+        box-shadow: 0 0.5rem 1rem #681e2789;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .container {
+        justify-content: center;
+        position: absolute;
+        margin-left: auto;
+        top: -6rem;
+        right: auto;
+        width: 40rem;
+        height: 40rem;
+        scale: 0.70;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .card {
+        background: #fff;
+        box-shadow: 0 0.5rem 1rem #681e2789;
+    }
+}

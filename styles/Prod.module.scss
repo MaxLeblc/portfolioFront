@@ -1,0 +1,248 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes bubble {
+
+    0%,
+    100% {
+        transform: translateY(-15px);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+}
+
+.view {
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1500ms ease backwards;
+
+    &>.container1 {
+        animation: bubble 8s ease-in-out infinite;
+    }
+
+    &>.container2 {
+        animation: bubble 10s ease-in-out infinite;
+    }
+
+    &>.container3 {
+        animation: bubble 12s ease-in-out infinite;
+    }
+
+    &>.container4 {
+        animation: bubble 7s ease-in-out infinite;
+    }
+}
+
+.container1,
+.container2,
+.container3,
+.container4 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 0.5rem;
+    background-image: url('../public/prod/ouioui.png');
+    background-position: top;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    margin: 2rem;
+}
+
+.container1 {
+    &:hover {
+        background-image: url('../public/prod/ouioui2.png');
+        transition: 1s;
+
+        &>.description {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+}
+
+.container2 {
+    background-image: url('../public/prod/popcorn.png');
+
+    &:hover {
+        background-image: url('../public/prod/popcorn2.png');
+        transition: 1s;
+
+        &>.description {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+}
+
+.container3 {
+    background-image: url('../public/prod/touittaire.png');
+
+    &:hover {
+        background-image: url('../public/prod/touittaire2.png');
+        transition: 1s;
+
+        &>.description {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+}
+
+.container4 {
+    background-image: url('../public/prod/buddy.png');
+
+    &:hover {
+        background-image: url('../public/prod/buddy2.png');
+        transition: 1s;
+
+        &>.description {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 7rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 18px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.button {
+    width: 100%;
+    margin: 0 1rem 1rem 1rem;
+
+    &>a {
+        margin: 0 1rem;
+
+        &:hover {
+            font-weight: 600;
+        }
+
+        &:-webkit-any-link {
+            color: #FB4A5F;
+            text-decoration: none;
+        }
+    }
+}
+
+@media all and (max-height: 1024px) {
+    .view {
+        gap: 0;
+    }
+    
+    .container1,
+    .container2,
+    .container3,
+    .container4 {
+        scale: 0.80;
+        width: 22rem;
+        height: 22rem;
+        margin: 0;
+        background-size: cover;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1720px) {
+    .view {
+        position: absolute;
+        top: -1rem;
+        left: 6rem;
+        width: 60rem;
+        gap: 0;
+        border: blue solid;
+    }
+    
+    .container1,
+    .container2,
+    .container3,
+    .container4 {
+        margin: 0;
+        scale: 0.8;
+        background-size: cover;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .view {
+        position: absolute;
+        top: -1rem;
+        left: 3rem;
+        width: 50rem;
+        gap: 0;
+        border: yellow solid;
+    }
+    
+    .container1,
+    .container2,
+    .container3,
+    .container4 {
+        margin: 0;
+        scale: 0.7;
+        background-size: cover;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .view {
+        position: absolute;
+        top: -1.5rem;
+        width: 30rem;
+        height: 30rem;
+        border: blue solid;
+    }
+    
+    .container1,
+    .container2,
+    .container3,
+    .container4 {
+        margin: 2rem;
+        width: 10rem;
+        height: 10rem;
+        scale: 1;
+        background-size: cover;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .view {
+        position: absolute;
+        top: 1.5rem;
+        width: 30rem;
+        height: 30rem;
+        border: #FB4A5F solid;
+    }
+    
+    .container1,
+    .container2,
+    .container3,
+    .container4 {
+        margin: 1rem;
+        width: 10rem;
+        height: 10rem;
+        scale: 0.9;
+        background-size: cover;
+    }
+}

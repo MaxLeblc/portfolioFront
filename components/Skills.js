@@ -1,12 +1,12 @@
-import styles from '../styles/Skills.module.css'
+import styles from '../styles/Skills.module.scss'
 
 function Skills() {
 
   const stack = [
     { name: 'HTML', image: '/stack/html.png', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-    { name: 'CSS', image: '/stack/css.png', link:'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+    { name: 'CSS', image: '/stack/css.png', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
     { name: 'Javascript', image: '/stack/js.png', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
-    { name: 'React', image: '/stack/react.png', link: 'https://reactjs.org/docs/getting-started.html'  },
+    { name: 'React', image: '/stack/react.png', link: 'https://reactjs.org/docs/getting-started.html' },
     { name: 'React Native', image: '/stack/reactNative.png', link: 'https://reactnative.dev/docs/getting-started' },
     { name: 'Redux', image: '/stack/redux.png', link: 'https://redux.js.org/introduction/getting-started' },
     { name: 'Redux Toolkit', image: '/stack/redux.png', link: 'https://redux-toolkit.js.org/introduction/getting-started' },
@@ -16,7 +16,7 @@ function Skills() {
     { name: 'MongoDB', image: '/stack/mongoDB.png', link: 'https://www.mongodb.com/docs/manual/tutorial/getting-started/' },
     { name: 'GitHub', image: '/stack/gitHub.png', link: 'https://docs.github.com/fr/get-started' },
     { name: 'Yarn', image: '/stack/yarn.png', link: 'https://yarnpkg.com/getting-started/install' },
-    { name: 'Sass', image: '/stack/sass.png', link: 'https://sass-lang.com/documentation/'},
+    { name: 'Sass', image: '/stack/sass.png', link: 'https://sass-lang.com/documentation/' },
     { name: 'Méthode Agile', image: '/stack/agile.png', link: 'https://www.atlassian.com/fr/agile' },
     { name: 'Figma', image: '/stack/figma.png', link: 'https://help.figma.com/hc/en-us/categories/360002042553-Figma-design#Get-started' },
     { name: 'Photoshop', image: '/stack/photoshop.png', link: 'https://helpx.adobe.com/photoshop/get-started.html' },
@@ -28,22 +28,18 @@ function Skills() {
   const fullStack = stack.map((data, i) => {
     return (
       <div className={styles.card} key={i} onClick={() => window.open(`${data.link}`, '_blank')}>
-          <div className={styles.description}>
-            <img className={styles.image} src={data.image} alt='stack' />
-            <p >{data.name}</p>
+        <div className={styles.description}>
+          <img className={styles.image} src={data.image} alt='stack' />
+          <p >{data.name}</p>
         </div>
       </div>
     )
   })
 
   return (
-    <div className={styles.view}>
       <div className={styles.container}>
         {fullStack}
       </div>
-
-
-    </div>
   )
 }
 

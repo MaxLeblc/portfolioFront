@@ -47,7 +47,7 @@
 	width: 100%;
 	height: 100vh;
 	z-index: -2;
-	background-color: #FB4A5F;
+	background-color: #fB4A5F;
 	clip-path: circle(60vw at 100vw 50%);
 	margin-left: 2rem;
 }
@@ -223,41 +223,6 @@
 	z-index: 0;
 }
 
-/*------ Media Queries ------*/
-
-/* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px) {...} */
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {...} */
-
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {...} */
-
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {...} */
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {...} */
-
-// @media only screen and (min-width: 43rem) {
-// 	.view {
-// 	  background: aquamarine;
-// 	}
-//   }
-
-// @media only screen and (min-width: 62rem) {
-// 	.view {
-// 	  background: greenyellow;
-// 	}
-//   }
-
-// @media only screen and (min-width: 82rem) {
-// .view {
-// 	background: blue;
-// }
-// }
-
 @media all and (min-width: 1024px) and (max-width: 1720px) {
 	.view {
 		grid-template-columns: 1fr;
@@ -346,14 +311,6 @@
 			margin: 0;
 		}
 
-		&> :nth-child(3) {
-			// display: flex;
-			// justify-content: center;
-			// align-items: center;
-			// margin: 0;
-			// width: 100%;
-		}
-
 		&> :nth-child(n+3) {
 			padding: 0;
 			font-size: 16px;
@@ -432,14 +389,6 @@
 			-webkit-text-stroke: 0;
 			animation: fadeInUp 1s ease-out 600ms backwards;
 			margin: 0;
-		}
-
-		&> :nth-child(3) {
-			// display: flex;
-			// justify-content: center;
-			// align-items: center;
-			// margin: 0;
-			// width: 100%;
 		}
 
 		&> :nth-child(n+3) {
