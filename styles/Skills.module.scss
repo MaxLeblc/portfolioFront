@@ -77,30 +77,8 @@
 @media all and (min-width: 768px) and (max-width: 1024px) {
     .container {
         justify-content: center;
-        position: absolute;
-        margin-left: auto;
-        top: 1rem;
-        right: auto;
-        width: 60rem;
-        scale: 0.85;
-    }
-
-    .card {
-        background: #fff;
-        box-shadow: 0 0.5rem 1rem #681e2789;
-    }
-}
-
-@media all and (min-width: 480px) and (max-width: 768px) {
-    .container {
-        justify-content: center;
-        position: absolute;
-        margin-left: auto;
-        top: -3rem;
-        right: auto;
-        width: 40rem;
-        height: 40rem;
-        scale: 0.85;
+        margin-bottom: 15%;
+        scale: 0.80;
         overflow-y: scroll;
         -ms-overflow-style: none;
         scrollbar-width: none;
@@ -112,17 +90,35 @@
 
     .card {
         background: #fff;
-        box-shadow: 0 0.5rem 1rem #681e2789;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .container {
+        justify-content: center;
+        margin-bottom: 15%;
+        scale: 0.80;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .card {
+        background: #fff;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
     }
 }
 
 @media all and (max-width: 480px) {
     .container {
         justify-content: center;
-        position: absolute;
-        margin-left: auto;
-        top: -6rem;
-        right: auto;
+        position: fixed;
+        margin-bottom: 40%;
         width: 40rem;
         height: 40rem;
         scale: 0.70;
@@ -137,6 +133,6 @@
 
     .card {
         background: #fff;
-        box-shadow: 0 0.5rem 1rem #681e2789;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
     }
 }

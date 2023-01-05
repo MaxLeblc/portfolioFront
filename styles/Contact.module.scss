@@ -23,6 +23,10 @@
 }
 
 .view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     color: #fff;
     font-size: 20px;
     line-height: 2rem;
@@ -41,44 +45,54 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 .image {
     width: 20rem;
     border-radius: 50%;
-    margin-bottom: 2rem;
     animation: fadeInUp 1s ease-out 200ms backwards;
 }
 
 .links {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: start;
     width: 60%;
-    margin: 8rem 0 0 4rem
+    margin-left: 3rem;
 }
 
-.contactMail {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-    animation: fadeIn 800ms ease-in-out 1400ms backwards;
-}
-
+.contactCV,
+.contactMail,
 .contactSocial {
     display: flex;
     align-items: center;
     color: #fff;
     text-decoration: none;
     cursor: pointer;
+}
+
+.contactCV,
+.contactMail {
+    margin-bottom: 1rem;
+}
+
+.contactCV {
+    animation: fadeIn 800ms ease-in-out 1400ms backwards;
+}
+
+.contactMail {
     animation: fadeIn 800ms ease-in-out 1800ms backwards;
 }
 
+.contactSocial {
+    animation: fadeIn 800ms ease-in-out 2200ms backwards;
+}
+
 .icon {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     color: #fff;
     margin-right: 1rem;
 }
@@ -87,11 +101,11 @@
 
     .view {
         font-size: 18px;
+        margin-bottom: 10%;
     }
 
     .image {
         width: 14rem;
-        margin-top: 10rem;
     }
 
     .links {
@@ -118,6 +132,7 @@
         width: 12rem;
     }
 
+    .contactCV,
     .contactSocial,
     .contactMail,
     .icon {
@@ -129,6 +144,8 @@
     .view {
         line-height: 1.6rem;
         margin-left: 8rem;
+        margin-bottom: 10%;
+        font-size: 16px;
 
         &>p {
             color: #000;
@@ -147,22 +164,25 @@
         width: 11rem;
     }
 
+    .contactCV,
     .contactSocial,
     .contactMail,
     .icon {
         color: #000;
+        font-size: 16px;
     }
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
     .view {
         line-height: 1.6rem;
-        margin: 0 2rem;
+        margin-left: 6rem;
+        margin-bottom: 10%;
         font-size: 16px;
 
         &>p {
             color: #000;
-            width: 100%;
+            width: 90%;
         }
     }
 
@@ -179,6 +199,7 @@
         margin-left: 2rem;
     }
 
+    .contactCV,
     .contactSocial,
     .contactMail,
     .icon {
@@ -189,9 +210,12 @@
 
 @media all and (max-width: 480px) {
     .view {
-        line-height: 1.6rem;
+        position: fixed;
+        line-height: 1.1rem;
         margin: 0 2rem;
-        font-size: 14px;
+        padding: 0 2rem;
+        font-size: 12px;
+        margin-bottom: 10%;
 
         &>p {
             color: #000;
@@ -209,13 +233,15 @@
     }
 
     .links {
+
         margin-left: 2rem;
     }
 
+    .contactCV,
     .contactSocial,
     .contactMail,
     .icon {
         color: #000;
-        font-size: 14px;
+        font-size: 12px;
     }
 }

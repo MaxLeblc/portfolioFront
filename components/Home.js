@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
-import { GrLinkedin, GrGithub } from "react-icons/gr"
+import { GrLinkedin, GrGithub, GrNote } from "react-icons/gr"
 import Bubble from './Bubble'
 import Prod from './Prod'
 import Skills from './Skills'
@@ -52,6 +52,7 @@ function Home() {
             <h3>Développpeur fullstack</h3>
             <Link className={styles.icon1} href='https://github.com/MaxLeblc' target='_blank' ><GrGithub /></Link>
             <Link className={styles.icon2} href='https://github.com/MaxLeblc' target='_blank' ><GrLinkedin /></Link>
+            <Link className={styles.icon3} href='./maxime_leblanc_cv.pdf' download target='_blank' ><GrNote /></Link>
           </div>
           <p>« Aujourd’hui développeur Web & Mobile, j’ai acquis de solides compétences professionnelles pour avoir travaillé plus de dix années dans divers secteurs d’entreprises. Curieux et soucieux d’associer mon métier à l’enrichissement de mes connaissances et de participer à l’intelligence collective d’un projet, j’ai à coeur de m’investir pour la Tech. »</p>
         </div>
