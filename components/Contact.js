@@ -29,7 +29,7 @@ function Contact() {
         Sorti diplomé d'un titre RNCP de niveau 6 "Chef de projet d'application web & mobile", je poursuis mon apprentissage en étant, en paralèlle,
         teacher assistant dans le bootcamp qui m'a formé. De ce fait, j'accompagne les éléves dans leurs problématiques liées au code
         et je les aide aussi à se débugger.<br />
-        Vous trouverez sur mon portfolio mon stack ainsi que certain projets que j'ai réalisé notamment en React & React-Native.<br />
+        Vous trouverez sur mon portfolio, mon stack ainsi que certains projets réalisés notamment en React & React-Native.<br />
         Je suis actuellement à la recherche d'un poste alors n'hésitez pas à me contacter pour que nous puissions échanger ensemble !</p>
     </div>
   )

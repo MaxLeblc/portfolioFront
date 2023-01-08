@@ -10,6 +10,8 @@
 
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 60rem;
     animation: fadeIn 1500ms ease backwards;
@@ -24,7 +26,8 @@
     background-color: #ffc9cf;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
     border-radius: 0.5rem;
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    scale: 0.9;
     cursor: pointer;
 
     &:hover {
@@ -49,35 +52,22 @@
     padding: 1rem 1rem 0 1rem;
 }
 
-@media all and (max-height: 1024px) {
-    .card {
-        margin: 0 0.5rem 0 0;
-        scale: .80;
-    }
-
-}
-
 @media all and (min-width: 1024px) and (max-width: 1720px) {
 
     .container {
-        justify-content: center;
-        position: absolute;
-        margin-left: auto;
-        top: 1rem;
-        left: 6rem;
-        width: 60rem;
+        scale: 0.8;
+        margin-top: 0;
     }
 
     .card {
         background: #fff;
-        box-shadow: 0 0.5rem 1rem #681e2789;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
     }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
     .container {
         justify-content: center;
-        margin-bottom: 15%;
         scale: 0.80;
         overflow-y: scroll;
         -ms-overflow-style: none;
@@ -97,7 +87,6 @@
 @media all and (min-width: 480px) and (max-width: 768px) {
     .container {
         justify-content: center;
-        margin-bottom: 15%;
         scale: 0.80;
         overflow-y: scroll;
         -ms-overflow-style: none;
@@ -118,10 +107,7 @@
     .container {
         justify-content: center;
         position: fixed;
-        margin-bottom: 40%;
-        width: 40rem;
-        height: 40rem;
-        scale: 0.70;
+        width: 95%;
         overflow-y: scroll;
         -ms-overflow-style: none;
         scrollbar-width: none;
@@ -135,4 +121,28 @@
         background: #fff;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
     }
+}
+
+@media all and (max-height: 720px) {
+    .container {
+        height: 42rem;
+        scale: 0.75;
+    }
+
+    .card {
+        margin: 0 0.5rem 0 0;
+    }
+
+}
+
+@media all and (max-height: 1024px) {
+    .container {
+        height: 42rem;
+        scale: 0.75;
+    }
+
+    .card {
+        margin: 0 0.5rem 0 0;
+    }
+
 }

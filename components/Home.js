@@ -27,7 +27,6 @@ function Home() {
   }, [componentChoice])
 
   const navBar = () => {
-    if (!isMobile) {
       return (
         <div className={styles.header}>
           <Link href='/' onClick={() => { window.location.reload(false), setComponentChoice('home') }}>Home</Link>
@@ -36,7 +35,6 @@ function Home() {
           <Link href='#' onClick={() => setComponentChoice('contact')}>Contact</Link>
         </div>
       )
-    }
   }
 
 
