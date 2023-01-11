@@ -1,3 +1,9 @@
+@mixin flexMid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0
@@ -9,18 +15,14 @@
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexMid;
     flex-wrap: wrap;
     width: 60rem;
     animation: fadeIn 1500ms ease backwards;
 }
 
 .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexMid;
     width: 10rem;
     height: 10rem;
     background-color: #ffc9cf;
