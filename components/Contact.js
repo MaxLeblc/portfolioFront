@@ -7,7 +7,7 @@ function Contact() {
     <div className={styles.view}>
       <div className={styles.container} >
         <a href='https://what-do-u-meme.vercel.app' target='_blank'>
-          <img className={styles.image} src='./chouette.png' alt='maxime leblanc' />
+          <img className={styles.image} src='./maxime_leblanc.jpg' alt='maxime leblanc' />
         </a>
         <div className={styles.links} >
           <Link className={styles.contactCV} href='./maxime_leblanc_cv.pdf' download target='_blank'>
